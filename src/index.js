@@ -3,28 +3,32 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { initializeApp } from "firebase/app";
 
 /* Copiamos el String de Conexion de Firebase,  */
 
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyAhkO8aohvJFDccYsP6Y-gH5XS5OV1Su40",
-  authDomain: "bikeonline00.firebaseapp.com",
-  projectId: "bikeonline00",
-  storageBucket: "bikeonline00.appspot.com",
-  messagingSenderId: "1045404655778",
-  appId: "1:1045404655778:web:b8400498f7adc972eb77fb"
-};
+/* const firebaseConfig = {
+  apiKey: "AIzaSyCgwCVF7MGf_6CNnOhLUA1Uc9bWUNG4HuE",
+  authDomain: "bikeonline8.firebaseapp.com",
+  projectId: "bikeonline8",
+  storageBucket: "bikeonline8.appspot.com",
+  messagingSenderId: "677514572326",
+  appId: "1:677514572326:web:8e41617b37420d70acace7"
+}; */
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+/* const app = initializeApp (firebaseConfig); */
+
+const app = initializeApp ({
+  apiKey: "AIzaSyCgwCVF7MGf_6CNnOhLUA1Uc9bWUNG4HuE",
+  authDomain: "bikeonline8.firebaseapp.com",
+  projectId: "bikeonline8",
+  storageBucket: "bikeonline8.appspot.com",
+  messagingSenderId: "677514572326",
+  appId: "1:677514572326:web:8e41617b37420d70acace7"
+})
 
 
 

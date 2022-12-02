@@ -11,15 +11,21 @@ export default function ItemDetail({ producto }) {
     <div style={{ border: '2px solid violet', margin: '10px' }}>
       {producto.id ? (
         <>
-          ID: {producto.id}
+          id: {producto.id}
           <br />
-          PRODUCTO: {producto.nombre}
+          brand: {producto.brand}
           <br />
-          CATEGORIA: {producto.categoria}
+          model: {producto.model}
           <br />
-          PRECIO: {producto.precio}
+          category: {producto.category}
           <br />
-          SOTCK: {producto.stock}
+          price: {producto.price}
+          <br />
+          stock: {producto.stock}
+          <br />
+          year: {producto.year}
+          <br />
+          img: {producto.img}
           <br />
           <ItemCount ini={1} max={producto.stock} onAdd={onAdd} />
         </>
